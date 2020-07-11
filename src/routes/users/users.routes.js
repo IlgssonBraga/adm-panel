@@ -11,6 +11,6 @@ usersRouter.get("/cadUsers", (req, res) => {
   res.render("cadUsers.ejs");
 });
 
-usersRouter.post("/test", UserController.store);
+usersRouter.post("/", UserController.store);
 
 export default usersRouter;
