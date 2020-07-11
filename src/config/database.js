@@ -1,8 +1,12 @@
-import Sequelize from "sequelize";
-
-const sequelize = new Sequelize("panel", "postgres", "docker", {
-  host: "localhost",
+module.exports = {
   dialect: "postgres",
-});
-
-export default sequelize;
+  host: "localhost",
+  username: "postgres",
+  password: "docker",
+  database: "panel",
+  define: {
+    timestamps: true,
+    underscored: true,
+    underscoredAll: true,
+  },
+};
