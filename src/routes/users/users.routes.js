@@ -3,7 +3,7 @@ import { Router } from "express";
 const usersRouter = Router();
 
 usersRouter.get("/", (req, res) => {
-  res.render("index.ejs");
+  res.send("Hi");
 });
 
 export default usersRouter;

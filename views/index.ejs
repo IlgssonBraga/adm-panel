@@ -1,11 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
+<%- include('partials/header.ejs') %>
   <body>
-    <h1>Project using bootstrap</h1>
+    <div class="container">
+      <h1>Project using EJS</h1>
+
+      <form class="form-container">
+        <input 
+        type="text" 
+        name="username" 
+        placeholder="Digite seu nome de usuário"
+        class="ip"
+        />
+        <input 
+        type="password"
+        name="password" 
+        placeholder="Digite sua senha"
+        class="ip"
+        />
+
+        <button type="submit" class="btn-enter">Entrar</button>
+      </form>
+    </div>
   </body>
+  <%- include('partials/scripts.ejs') %>
 </html>
