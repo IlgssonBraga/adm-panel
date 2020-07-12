@@ -11,13 +11,6 @@ usersRouter.get("/cadUsers", (req, res) => {
 
 usersRouter.post("/", UserController.store);
 
-usersRouter.get("/test", (req, res) => {
-  function soma(a, b) {
-    return a + b;
-  }
-
-  const s = soma(3, 2);
-  res.render("test.ejs", { soma, s });
-});
+usersRouter.delete("/:id", UserController.delete);
 
 export default usersRouter;

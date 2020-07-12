@@ -3,8 +3,10 @@
     <h1>Users List</h1>
     <ul>
         <% users.forEach(user => { %>
-            <li><%= user.name %></li>
+            <li><%= user.name %> <button type="button" onclick="handleDeleteUser(6)">Excluir</button> </li>
     <% }) %>  
     </ul>
   </body>
+  <script src="scripts/handleDeleteUser.js">
+  </script>
 </html>
